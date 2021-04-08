@@ -29,7 +29,7 @@ egrep "^M" states.txt --> represents the start of a line. i.e. Maine, Mass
 egrep "^[AEIOU]" states.txt --> start with a vowel
 egrep "e$" states.txt --> represents the end of a line. i.e. Maine, Delaware
 egrep "North|South" states.txt --> "or" metacharacter, i.e. North Dakota, South Carolina
--n flag will show line numbers
+-n flag shows line numbers
 egrep "^[AEIOU]{1}.+[aeiou]{1}$" states.txt --> begin/end with vowel
 
 Metacharacter	Meaning
