@@ -34,30 +34,33 @@ egrep "^[AEIOU]{1}.+[aeiou]{1}$" states.txt --> begin/end with vowel
 
 Metacharacter	Meaning
 
-.				Any Character
-\w				A Word
-\W				Not a Word
-\d				A Digit
-\D				Not a Digit
+.				Any character
+\w				A word
+\W				Not a word
+\d				A digit
+\D				Not a digit
 \s				Whitespace
-\S				Not Whitespace
-[def]			A Set of Characters
-[^def]			Negation of Set
-[e-q]			A Range of Characters
-^				Beginning of String
-$				End of String
+\S				Not whitespace
+[def]			A Set of characters
+[^def]			Negation of set
+[e-q]			A Range of characters
+^				Beginning of string
+$				End of string
 \n				Newline
-+				One or More of Previous
-*				Zero or More of Previous
-?				Zero or One of Previous
-|				Either the Previous or the Following
-{6}				Exactly 6 of Previous
-{4, 6}			Between 4 and 6 or Previous
-{4, }			More than 4 of Previous
++				One or more of previous
+*				Zero or more of previous
+?				Zero or one of previous
+|				Either the previous or the following
+{6}				Exactly 6 of previous
+{4, 6}			Between 4 and 6 or previous
+{4, }			More than 4 of previous
 
 diff --> compare files line-by-line
 md5 or md5sum --> computes the md5 hash of a file
 shasum --> compute the SHA-1 hash of a file
 
 expr --> does simple integer arithmetic i.e. expr 4 + 4
-bc --> an arbitrary precision calculator language i.e echo "4.2 * 9.15" | bc -l
+bc --> complicated arithmetic using echo. i.e echo "4.2 * 9.15" | bc -l
+
+chapter_number=5 --> no spaces around equals sign.
+store a shell command in a variable --> math_lines=$(cat states.txt | wc -l)
