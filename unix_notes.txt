@@ -1,0 +1,63 @@
+apropos - search the manual page names and descriptions by keyword
+
+man page: use / to search man page
+
+Regular Expressions:
+
+grep "x" file.txt
+grep "nia" file.txt
+
+The "." represents any character.
+grep "i.g" states.txt --> "i" followed by any char followed by "g."
+egrep "s+as" states.txt --> one or more occurances of "s" followed by "as."
+egrep "s*as" states.txt --> zero or more occurances of "s" followed by "as."
+egrep "s{2}" states.txt --> exactly two occurances of "s."
+egrep "s{2}a" states.txt --> exactly two occurances of "s" followed by an "a."
+egrep "s{1,3}" states.txt --> between one and three occurances of "s."
+egrep "(is){1,3}" states.txt --> a capturing group between one and three occurances of "is."
+egrep "(i.{2}){3}" states.txt --> three occurrences of an “i” followed by two of any character.
+
+\w metacharacter corresponds to all “word” characters \W non-words
+egrep "[0-9]" corresponds to all “number” characters 
+\s metacharacter corresponds to all “space” characters \S non-spaces
+-v flag shows the compliment
+
+egrep "[aeiou]" small.txt --> match lines with small vowels
+egrep "[^aeiouAEIOU]" small.txt --> match lines with not small and capitol vowels
+
+egrep "^M" states.txt --> represents the start of a line. i.e. Maine, Mass
+egrep "^[AEIOU]" states.txt --> start with a vowel
+egrep "e$" states.txt --> represents the end of a line. i.e. Maine, Delaware
+egrep "North|South" states.txt --> "or" metacharacter, i.e. North Dakota, South Carolina
+-n flag will show line numbers
+egrep "^[AEIOU]{1}.+[aeiou]{1}$" states.txt --> begin/end with vowel
+
+Metacharacter	Meaning
+
+.				Any Character
+\w				A Word
+\W				Not a Word
+\d				A Digit
+\D				Not a Digit
+\s				Whitespace
+\S				Not Whitespace
+[def]			A Set of Characters
+[^def]			Negation of Set
+[e-q]			A Range of Characters
+^				Beginning of String
+$				End of String
+\n				Newline
++				One or More of Previous
+*				Zero or More of Previous
+?				Zero or One of Previous
+|				Either the Previous or the Following
+{6}				Exactly 6 of Previous
+{4, 6}			Between 4 and 6 or Previous
+{4, }			More than 4 of Previous
+
+diff --> compare files line-by-line
+md5 or md5sum --> computes the md5 hash of a file
+shasum --> compute the SHA-1 hash of a file
+
+expr --> does simple integer arithmetic i.e. expr 4 + 4
+bc --> an arbitrary precision calculator language i.e echo "4.2 * 9.15" | bc -l
