@@ -1,4 +1,5 @@
 #!/usr/bin/zsh
+# File: logic.sh
 
 tru=1
 fal=0

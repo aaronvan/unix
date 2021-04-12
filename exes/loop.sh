@@ -1,4 +1,5 @@
 #!/usr/bin/zsh
+# File: loop.sh
 
 echo "Before Loop"
 for i in {1..12}

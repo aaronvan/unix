@@ -1,4 +1,5 @@
 #!/usr/bin/zsh
+# File: vars.sh
 
 # The first argument to your script is stored in $1.
 # the second argument is stored in $2, etc, etc.

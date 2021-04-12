@@ -1,4 +1,5 @@
 #!/usr/bin/zsh
+# File: bigmath.sh
 
 echo "22 / 7 " | bc -l
 echo "4.2 * 9.15" | bc -l

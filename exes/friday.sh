@@ -1,4 +1,5 @@
 #!/usr/bin/zsh
+# File: friday.sh
 
 # redirect output into a variable by enclosing the command in $()
 day=$(date +%a)
