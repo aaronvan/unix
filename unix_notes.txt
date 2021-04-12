@@ -75,3 +75,5 @@ command not found exit status --> 127
 
 To redirect the output of a commend into a variable, enlose the commend in $()
 i.e. today=$(date +%a)
+
+brace expansion: echo {1..4} --> 1 2 3 4
