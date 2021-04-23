@@ -78,4 +78,4 @@ i.e. today=$(date +%a)
 
 brace expansion: echo {1..4} --> 1 2 3 4
 
-source: allows function definitions in bash scripts as CLI commands.
+source: allows functions in zsh scripts to be used as CLI commands.
